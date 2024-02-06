@@ -13,18 +13,21 @@
 A command-line application that dynamically generates a professional README.md file from a user's input.
 
 ## Technologies
-Clone Github Repo 
+* VS Code
+* GitBash
+* Node.js
 
 ## Usage
-Run Node Index
+1. Git clone this GitHub repository.
+2. Install NPM (Node Package Manager) by the following code: "npm init -y".
+3. Install the Inquirer package by the following code: "npm install inquirer". This command installs the Inquirer package, which is a popular package for creating interactive command-line interfaces.
+4. Initialize prompts using the command "node index.js".
+5. From there, answer the questions and Voila! You have successfully generated a new README file for your project. This file can now be used to provide important information about your project to users and contributors. 
 
-
-
-## Tests
-Run test
+Video walk through: [Link here](https://app.screencastify.com/v3/watch/iMgLKxWYlpKv1sxfOxZk)
 
 ## License
-This application is covered under the None license.
+This application is covered under the MIT license. 
 
 ## Questions
 If you have any questions, you can reach me on GitHub: [RaihanAli29](https://github.com/RaihanAli29)
