@@ -3,8 +3,6 @@ const path = require('path');
 const inquirer = require('inquirer');
 const generateMarkdown = require('./utils/generateMarkdown');
 
-// array of questions for user
-function promptUser() {
 const questions = [
   {
     type: 'input',
@@ -44,7 +42,7 @@ const questions = [
   },
   {
     type: 'input',
-    name: 'githubUsername',
+    name: 'github',
     message: 'Enter your GitHub username:',
   },
   {
@@ -52,14 +50,18 @@ const questions = [
     name: 'email',
     message: 'Enter your email address:',
   },
-]
-};
+];
+function promptUser() {
+  return inquirer.prompt(questions);
+}
 
 // function to write README file
 function writeToFile(fileName, data) {
   fs.writeFile(fileName, data , err => {
     if (err) {
       return console.log("Error writing to file", err);
+    } else {
+      console.log("Successly created ${fileName} file");
     }
   })};
 

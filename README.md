@@ -10,7 +10,9 @@
 * [Questions](#questions)
 
 ## Description
-A command-line application that dynamically generates a professional README.md file from a user's input.
+When creating an open source project on GitHub, it's important to have a high-quality README for the app. This should include the app's purpose, how to use the app, how to install it, how to report issues, and how to make contributions. This last part increases the likelihood that other developers will contribute to the success of the project.
+
+You can quickly and easily create a README file by using a command-line application to generate one. This allows the project creator to devote more time to working on the project.
 
 ## Technologies
 * VS Code
@@ -24,7 +26,7 @@ A command-line application that dynamically generates a professional README.md f
 4. Initialize prompts using the command "node index.js".
 5. From there, answer the questions and Voila! You have successfully generated a new README file for your project. This file can now be used to provide important information about your project to users and contributors. 
 
-Video walk through: [Link here](https://app.screencastify.com/v3/watch/iMgLKxWYlpKv1sxfOxZk)
+Video walk through: [Link here](https://watch.screencastify.com/v/FTlxT8rH3oYFTWJM5m1Z) 
 
 ## License
 This application is covered under the MIT license. 
@@ -32,4 +34,4 @@ This application is covered under the MIT license.
 ## Questions
 If you have any questions, you can reach me on GitHub: [RaihanAli29](https://github.com/RaihanAli29)
 
-You can also contact me via email: raihanibnmalik@live.com
+You can also contact me via email: mediaraihanali@gmail.com.
