@@ -1,14 +1,14 @@
-// Including packages needed for this application
 const fs = require('fs');
 const path = require('path');
 const inquirer = require('inquirer');
 const generateMarkdown = require('./utils/generateMarkdown');
 
 // array of questions for user
+function promptUser() {
 const questions = [
   {
     type: 'input',
-    name: 'projectTitle',
+    name: 'title',
     message: 'Enter the title of your project:',
   },
   {
@@ -52,23 +52,24 @@ const questions = [
     name: 'email',
     message: 'Enter your email address:',
   },
-];
+]
+};
 
 // function to write README file
 function writeToFile(fileName, data) {
-  fs.writeFileSync(fileName, data);
-  console.log(`README.md file has been generated as ${fileName}`);
-}
+  fs.writeFile(fileName, data , err => {
+    if (err) {
+      return console.log("Error writing to file", err);
+    }
+  })};
 
 // function to initialize program
 function init() {
-  // Prompt the user with questions
-  inquirer.prompt(questions).then((answers) => {
-    const readmeContent = generateMarkdown(answers);
-    const fileName = path.join(process.cwd(), 'README.md');
-    writeToFile(fileName, readmeContent);
-  });
-}
+  inquirer.prompt(questions)
+ .then((data) => {
+      writeToFile('README.md', generateMarkdown(data));
+    });
+  };
 
 // function call to initialize program
-init();
+init(); 
